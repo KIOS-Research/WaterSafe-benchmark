@@ -43,6 +43,7 @@ plot(time,sim.q1)
 grid on
 % axis([0 100 -0.2 1])
 title('Flow of T_1')
+ylabel('Flow (cm^3/sec)')
 legend('Experiment','Simulation')
 
 subplot(4,1,2)
@@ -50,6 +51,7 @@ plot(time,exp.q2)
 hold on 
 plot(time,sim.q2)
 grid on
+ylabel('Flow (cm^3/sec)')
 % axis([0 100 -0.2 1])
 title('Flow of T_2')
 
@@ -57,6 +59,7 @@ subplot(4,1,3)
 plot(time,exp.q3)
 hold on 
 plot(time,sim.q3)
+ylabel('Flow (cm^3/sec)')
 grid on
 % axis([0 100 -0.2 1])
 title('Flow of T_3')
@@ -66,6 +69,8 @@ plot(time,exp.q4)
 hold on 
 plot(time,sim.q4)
 grid on
+ylabel('Flow (cm^3/sec)')
+xlabel('Time (sec)')
 % axis([0 100 -0.2 1])
 title('Flow of T_4')
 
@@ -76,33 +81,42 @@ plot(time,exp.h1)
 hold on 
 plot(time, sim.h1)
 grid on
+ylabel('Level (cm)')
 % axis([0 100 10 35])
 title('Level of T_1')
 legend('Experiment','Simulation')
+% xlim([0 3000])
 
 subplot(4,1,2)
 plot(time,exp.h2)
 hold on 
 plot(time, sim.h2)
 grid on
+ylabel('Level (cm)')
 % axis([0 100 10 35])
 title('Level of T_2')
+% xlim([0 3000])
 
 subplot(4,1,3)
 plot(time,exp.h3)
 hold on 
 plot(time, sim.h3)
 grid on
+ylabel('Level (cm)')
 % axis([0 100 10 25])
 title('Level of T_3')
+% xlim([0 3000])
 
 subplot(4,1,4)
 plot(time,exp.h4)
 hold on 
 plot(time, sim.h4)
 grid on
+ylabel('Level (cm)')
+xlabel('Time (sec)')
 % axis([0 100 10 25])
 title('Level of T_4')
+% xlim([0 3000])
 
 %% Plot Demands
 % figure 

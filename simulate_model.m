@@ -135,8 +135,8 @@ Rl_2=16;
 Ru_3=22;
 Rl_3=16;
 
-Ru_4=22.5;
-Rl_4=15.7;
+Ru_4=22.7;
+Rl_4=15.9;
 
 %% Simulate model and save data
 sim WaterSafe.mdl
