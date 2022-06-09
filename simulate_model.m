@@ -3,7 +3,6 @@ clear all; close all; clc;
 % simulation time
 sim_time=10000;%seconds
 sim_step=1; %second
-g=9.80; %m/s^2
 
 % Actuator subsystem 1
 a_1= 0.107;
@@ -105,6 +104,7 @@ t_s_4_2=3000;
 
 %% Demand pattern
 load dataset
+g=9.80; %m/s^2
 
 % measured consumption
 s1=dataset{1, 1}{5, 2}; s1=fillmissing(s1,'nearest');
